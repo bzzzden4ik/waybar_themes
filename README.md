@@ -13,6 +13,31 @@ Here are configs:
 
 Here is project structure:
 
+### Necessary things
+
+First of all you must install _waybar_ package.
+
+For **Debian** based systems _(Debian, Ubuntu)_:
+
+```bash
+sudo apt update
+sudo apt install waybar
+```
+
+For **Red Hat** based systems _(RHEL, Fedora)_:
+
+```bash
+sudo dnf upgrade
+sudo dnf install waybar
+```
+
+For **Arch** based systems _(Arch Linux, Manjaro)_:
+
+```bash
+sudo pacman -Syu
+sudo pacman -S waybar
+```
+
 ### How to use
 
 ### Troubleshooting
