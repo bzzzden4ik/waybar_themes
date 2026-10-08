@@ -6,8 +6,13 @@ This repo represents my personal waybar themes that consist of self-written conf
 
 Here are configs:
 
-* Minimalistic_light - Without numbers and digits 
-* Minimalistic_heavy - With numbers and digits 
-*
+* Minimalistic_light - Without numbers and digits [+]
+* Minimalistic_heavy - With numbers and digits [-]
 
-### How to use?
+### Project Structure
+
+Here is project structure:
+
+### How to use
+
+### Troubleshooting
