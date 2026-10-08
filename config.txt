@@ -1,0 +1,4 @@
+This note represents my config files:
+
+1. config_0.jsonc + style_0.css - Light bar without percents
+2. config_1.jsonc + style_1.css	- Light	bar with percents

@@ -1,0 +1,66 @@
+* {
+    font-family: "0xProto", sans-serif;
+    font-size: 12px;
+}
+
+window#waybar {
+    background: rgba(43, 48, 59, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+window#waybar > box {
+    padding: 0px 20px;
+}
+
+#workspaces {
+    padding: 0 20px;
+}
+
+#workspaces button,
+#workspaces button label {
+    animation: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 18px;
+}
+
+#workspaces button,
+#workspaces button:hover,
+#workspaces button.active,
+#workspaces button.active:hover {
+    padding: 0 2px;
+    border: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #ffffff;
+    transition: color 0.1s ease-in-out;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: #8ac2dc;
+    transition: color 0.1s ease-in-out;
+}
+
+#workspaces button.active,
+#workspaces button.active label {
+    background: transparent;
+    color: #8acff0;
+    transition: none;
+}
+#workspaces button.active:hover,
+#workspaces button.active:hover label {
+    background: transparent;
+    color: #8acff0;
+    transition: none;
+}
+#custom-mytext {
+    font-size: 18px;
+}
