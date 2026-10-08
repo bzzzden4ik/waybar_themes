@@ -38,6 +38,9 @@ sudo pacman -Syu
 sudo pacman -S waybar
 ```
 
+Also here is one thing that helps to **display icons correctly**.
+You **must** use JetBrainsNerdMono/0xProto or another Nerd included fonts.
+
 ### How to use
 
 ### Troubleshooting
