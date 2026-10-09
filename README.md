@@ -8,6 +8,7 @@ Here are configs:
 
 * Minimalistic_light - Without numbers and digits [+]
 * Minimalistic_heavy - With numbers and digits [-]
+* GlassMorph - Glass Morph based panel [-]
 
 ### Project Structure
 

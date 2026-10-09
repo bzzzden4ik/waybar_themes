@@ -1,0 +1,91 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    "width": 600,
+    "tooltip": false,
+    "modules-left": [
+        "custom/mytext"
+    ],
+    "modules-center": [
+        "clock#left",
+        "hyprland/workspaces",
+        "clock#right"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "custom/mytext": {
+        "format": " ",
+        "tooltip": false,
+        "interval": "once"
+    },
+    "pulseaudio": {
+    	"format": "{icon}",
+    	"format-bluetooth": "{volume}% {icon}",
+    	"format-muted": "󰝟 ",
+    	"format-icons": {
+    		"headphone": " ",
+    		"default": ["󰕿 ", "󰖀 ", "󰕾 "]
+    	},
+    	"scroll-step": 5,
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+    "format": "{icon}",
+    "sort-by-number": true,
+    "active-only": false,
+    "all-outputs": true,
+    
+    /* Отключаем дефолтный относительный скролл самого модуля */
+    "disable-scroll": true, 
+    
+    /* Принудительно заставляем скролл переключать числовые ID (r+1 / r-1) */
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+    },
+    
+    "format-icons": {
+        "active": " ",
+        "default": " ",
+        "empty": " "
+    }
+},
+
+    "network": {
+        "tooltip": false,
+        "format-wifi":"{icon}",
+        "format-ethernet": "🔌 {ipaddr}",
+        "format-disconnected": "󰤮 ",
+        "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
+    },
+    "battery": {
+    	"interval": 10,
+    	"format": "{icon} {capacity}%",
+    	"format-icons": {
+    		"default": ["󰂎 ", "󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
+    		"charging": ["󰢟 ", "󰢜 ", "󰂆 ", "󰂇 ", "󰂈 ", "󰢝 ", "󰂉 ", "󰢞 ", "󰂊 ", "󰂋 ", "󰂅 "]
+    	}
+    },
+    "clock#left": {
+	    "tooltip": false,
+	    "timezone": "Europe/Moscow",
+	    "interval": 60,
+	    "format": "{:%d.%m.%y}"
+    },
+    "clock#right": {
+	    "tooltip": false,
+	    "timezone": "Europe/Moscow",
+	    "interval": 60,
+	    "format": "{:%H:%M}"
+    }
+}
