@@ -14,6 +14,15 @@ Here are configs:
 
 Here is project structure:
 
+waybar/
+├── [theme_0]/
+│        ├── config.jsonc
+│        └── style.css
+├── [theme_2]/
+├── [theme_3]/
+├── [theme_4]/
+└── README.md
+
 ### Necessary things
 
 First of all you must install _waybar_ package.
@@ -43,5 +52,17 @@ Also here is one thing that helps to **display icons correctly**.
 You **must** use JetBrainsNerdMono/0xProto or another Nerd included fonts.
 
 ### How to use
+
+Choose exact **Waybar Theme** and copy it straight to .config/waybar:
+
+```bash
+cp [theme_name]/* /home/[username]/.config/waybar/
+```
+
+After that restart your waybar:
+
+```bash
+killall waybar & waybar &
+```
 
 ### Troubleshooting
