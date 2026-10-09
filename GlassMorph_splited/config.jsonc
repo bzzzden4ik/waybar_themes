@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    "modules-left": [
+        "custom/mytext"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock#right"
+    ],
+    "custom/mytext": {
+        "format": " ",
+        "tooltip": false,
+        "interval": "once"
+    },
+    "pulseaudio": {
+    	"format": "{icon} {volume}%",
+    	"format-bluetooth": "{volume}% {icon}",
+    	"format-muted": "󰝟  0%",
+    	"format-icons": {
+    		"headphone": " ",
+    		"default": ["󰕿 ", "󰖀 ", "󰕾 "]
+    	},
+    	"scroll-step": 5,
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "sort-by-number": true,
+        "all-outputs": true,
+        "active-only": false,
+        
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+    "network": {
+        "tooltip": false,
+        "format-wifi":"{icon}  {signalStrength}%",
+        "format-ethernet": "🔌 {ipaddr}",
+        "format-disconnected": "󰤮 ",
+        "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
+    },
+    "battery": {
+    	"interval": 10,
+    	"format": "{icon} {capacity}%",
+    	"format-icons": {
+    		"default": ["󰂎 ", "󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
+    		"charging": ["󰢟 ", "󰢜 ", "󰂆 ", "󰂇 ", "󰂈 ", "󰢝 ", "󰂉 ", "󰢞 ", "󰂊 ", "󰂋 ", "󰂅 "]
+    	}
+    },
+    "clock#left": {
+	    "tooltip": false,
+	    "timezone": "Europe/Moscow",
+	    "interval": 60,
+	    "format": "{:%d.%m.%y}"
+    },
+    "clock#right": {
+	    "tooltip": false,
+	    "timezone": "Europe/Moscow",
+	    "interval": 60,
+	    "format": "{:%H:%M}"
+    }
+}
