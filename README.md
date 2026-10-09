@@ -13,7 +13,7 @@ Here are configs:
 ### Project Structure
 
 Here is project structure:
-
+```text
 waybar/
 ├── [theme_0]/
 │        ├── config.jsonc
@@ -22,6 +22,7 @@ waybar/
 ├── [theme_3]/
 ├── [theme_4]/
 └── README.md
+```
 
 ### Necessary things
 
