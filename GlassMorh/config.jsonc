@@ -34,33 +34,16 @@
         "tooltip": false
     },
     "hyprland/workspaces": {
-    "format": "{icon}",
-    "sort-by-number": true,
-    "active-only": false,
-    "all-outputs": true,
-    
-    /* Отключаем дефолтный относительный скролл самого модуля */
-    "disable-scroll": true, 
-    
-    /* Принудительно заставляем скролл переключать числовые ID (r+1 / r-1) */
-    "on-scroll-up": "hyprctl dispatch workspace r-1",
-    "on-scroll-down": "hyprctl dispatch workspace r+1",
-    
-    "persistent-workspaces": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": []
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "*": 5
+        },
+        "format-icons": {
+            "active": " ",
+            "default": " "
+        },
+        "sort-by-id": true
     },
-    
-    "format-icons": {
-        "active": " ",
-        "default": " ",
-        "empty": " "
-    }
-},
-
     "network": {
         "tooltip": false,
         "format-wifi":"{icon}",
