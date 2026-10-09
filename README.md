@@ -8,7 +8,9 @@ Here are configs:
 
 * Minimalistic_light - Without numbers and digits [+]
 * Minimalistic_heavy - With numbers and digits [-]
-* GlassMorph - Glass Morph based panel [-]
+* GlassMorph - Glass Morph based panel [+]
+* GlassMorph_splited - Glass Morph based splited panel [-]
+* Material_splited - Material styled splited panel [-]
 
 ### Project Structure
 
